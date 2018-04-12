@@ -103,10 +103,15 @@ The things the grading code is looking for are:
 
 After achieving a working code I looked for limits that would allow to pass the submission. Naturally, more particles means more precision but it comes with a price that is more runtime. On the other side, less particles means less runtime, but with less precision.
 I finally found that the minimum number of particles for my code would be 9 (less than that and the errors will fall outside the acceptable range):
+
 <img src="results/9_part.png" alt="9 particles" />
+
 and the higest number would be 400 (more than that and the runtime will exceed the 100 seconds limit):
+
 <img src="results/400_part.png" alt="400 particles" />
+
 Based on the previous results, 100 particles seems to be a quites reasonable compromise since it is only few seconds slower that the 9 particles version, and achieves a precision very close to the 400 particles version:
+
 <img src="results/100_part.png" alt="100 particles" />
 
 Troubles found and their solution to complete the project:
